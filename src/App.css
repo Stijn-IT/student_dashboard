@@ -1,38 +1,80 @@
+body{
+  margin-top: 2%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button {
+  width: 200px;
+  font-size: 15px;
+  margin-right: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.ul-students {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(201, 203, 205);
+    margin-bottom: 30px;
   }
-}
+  
+  .li-students {
+    background-color: rgb(201, 203, 205);
+    text-align: center;
+    flex-direction: row;
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  .li-students:hover {
+color: rgb(47, 204, 57);
+  }
+
+  .link-studentview{
+    margin-top: 10px;
+  }
+  
+  .ul-app{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 0;
+  }
+
+  .li-app{
+    text-align: center;
+    flex-direction: row;
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 5px;
+  }
+  
+  .link{
+  text-align: center;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  font-size: 18px;
+  font-weight: 700;
   }
-  to {
-    transform: rotate(360deg);
+
+  .titles-studentchart h3{
+    color: rgb(56, 126, 101);
   }
-}
+
