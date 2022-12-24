@@ -12,6 +12,12 @@ function App() {
   const originalData = Utils()
   const [allData, setAllData] = useState(originalData);
 
+  useEffect(() => {
+    setAllData(originalData)
+  }, [originalData])
+
+
+
   // Ik weet dat ..Set korter is. Gebruik de langere hier om te oefenen met meerdere varianten. 
   const filterUniqueName = () => {
     const arrayNamen = allData.map(item => item.name)

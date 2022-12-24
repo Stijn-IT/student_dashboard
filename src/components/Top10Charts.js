@@ -9,7 +9,7 @@ const Top10Charts = ({ sortEasiest, sortBoring }) => {
 
   useEffect(() => {
     setDataTop10(sortEasiest)
-  }, [])
+  }, [sortEasiest])
 
 
   useEffect(() => {

@@ -9,7 +9,7 @@ const Home = ({ superResultaat, sortDifficultyLevel, sortFunlevel }) => {
 
   useEffect(() => {
     setData(superResultaat)
-  }, [])
+  }, [superResultaat])
 
   useEffect(() => {
     setTitleHome("chronological")
