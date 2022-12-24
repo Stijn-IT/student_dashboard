@@ -1,4 +1,4 @@
-body{
+body {
   margin-top: 2%;
   margin-left: 15%;
   margin-right: 15%;
@@ -8,12 +8,12 @@ body{
   text-align: center;
 }
 
-.barChart1{
+.barChart1 {
   font-size: 14px;
   margin-left: 160px;
 }
 
-.barChart2{
+.barChart2 {
   font-size: 14px;
   margin-right: 10px;
   margin-left: 0;
@@ -26,97 +26,97 @@ body{
 }
 
 .ul-students {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: rgb(201, 203, 205);
-    margin-bottom: 30px;
-  }
-  
-  .li-students {
-    background-color: rgb(201, 203, 205);
-    text-align: center;
-    flex-direction: row;
-    font-size: 16px;
-    font-weight: 600;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
-  }
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: rgb(201, 203, 205);
+  margin-bottom: 30px;
+}
 
-  .li-students:hover {
-color: rgb(47, 204, 57);
-  }
+.li-students {
+  background-color: rgb(201, 203, 205);
+  text-align: center;
+  flex-direction: row;
+  font-size: 16px;
+  font-weight: 600;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
 
-  .link-studentview{
-    margin-top: 10px;
-  }
-  
-  .ul-app{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: rgb(0, 0, 0);
-    margin-bottom: 0;
-  }
+.li-students:hover {
+  color: rgb(47, 204, 57);
+}
 
-  .li-app{
-    text-align: center;
-    flex-direction: row;
-    font-size: 16px;
-    font-weight: 600;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 20px;
-    padding-left: 5px;
-  }
-  
-  .link{
+.link-studentview {
+  margin-top: 10px;
+}
+
+.ul-app {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  margin-bottom: 0;
+}
+
+.li-app {
+  text-align: center;
+  flex-direction: row;
+  font-size: 16px;
+  font-weight: 600;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 5px;
+}
+
+.link {
   text-align: center;
   color: white;
   font-size: 18px;
   font-weight: 700;
+}
+
+.titles-studentchart h3 {
+  color: rgb(56, 126, 101);
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    margin-top: 5px;
+    margin-left: 5px;
   }
 
-  .titles-studentchart h3{
-    color: rgb(56, 126, 101);
+  .button {
+    width: 100px;
+    font-size: 10px;
+    margin-right: 5px;
   }
 
-  @media screen and (max-width: 700px) {
-    body {
-      margin-top: 5px;
-      margin-left: 5px;
-    }
-
-    .button {
-      width: 100px;
-      font-size: 10px;
-      margin-right: 5px;
-    }
-
-    .li-students {
-      font-size: 10px;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      padding-right: 5px;
-      padding-left: 5px;
-    }
-
-    .barChart1{
-      font-size: 10px;
-      margin-left: 10px;
-    }
-
-    .barChart2{
-      font-size: 8px;
-      margin-left:0;
-    }
+  .li-students {
+    font-size: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 3px;
+    padding-left: 3px;
   }
 
+  .barChart1 {
+    font-size: 9px;
+    margin-left: 10px;
+  }
+
+  .barChart2 {
+    font-size: 8px;
+    margin-left: 0;
+    margin-right: 15px;
+  }
+}
