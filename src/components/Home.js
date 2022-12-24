@@ -16,34 +16,34 @@ const Home = ({ superResultaat, sortDifficultyLevel, sortFunlevel }) => {
   }, [])
 
   return (
-    <div className='barChart'>
+    <div >
       <h2>Chart all students & exercises <span style={{ textDecoration: "underline" }}>{titleHome}</span></h2>
 
       {/* BUTTONS */}
       <button className='button' onClick={() => { setData(superResultaat); setTitleHome("Chronological") }}>Chronological</button>
       <button className='button' onClick={() => { setData(sortFunlevel); setTitleHome("highest FunLevel") }}>Highest FunLevel</button>
       <button className='button' onClick={() => { setData(sortDifficultyLevel); setTitleHome("highest DifficultyLevel") }}>Highest DifficultyLevel</button>
-
+      
+       <div className='barChart1'>
       <ResponsiveContainer width={"80%"} height={40 * data.length} >
         <BarChart
           data={data}
+          className="barchartt"
           layout="vertical"
           margin={{
             top: 30,
-            left: 180,
             bottom: 5,
             right: 20
           }}
         >
 
-          <Bar
+          <Bar 
             dataKey="difficultyLevel"
             radius={8} barSize={10} fill="#ff5722"
             label={{
               position: "right",
               angle: 0,
               fill: "black",
-              fontSize: 12,
               offset: 5
             }}
           />
@@ -55,7 +55,6 @@ const Home = ({ superResultaat, sortDifficultyLevel, sortFunlevel }) => {
               position: "right",
               angle: 0,
               fill: "black",
-              fontSize: 12,
               offset: 5
             }}
           />
@@ -63,17 +62,18 @@ const Home = ({ superResultaat, sortDifficultyLevel, sortFunlevel }) => {
             stroke="none" />
           <XAxis
             type="number"
-            tick={{ fontSize: 15 }}
             domain={[0, 4]} />
           <CartesianGrid strokeDasharray="3 3" />
+  
           <YAxis
             dataKey="exercise"
             type="category"
-            tick={{ fontSize: 15 }}
           />
+          
           <Legend layout="horizontal" verticalAlign="top" align="center" height={50} />
         </BarChart>
       </ResponsiveContainer>
+    </div>
     </div>
   );
 }

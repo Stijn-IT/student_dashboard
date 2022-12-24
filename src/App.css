@@ -8,6 +8,17 @@ body{
   text-align: center;
 }
 
+.barChart1{
+  font-size: 14px;
+  margin-left: 160px;
+}
+
+.barChart2{
+  font-size: 14px;
+  margin-right: 10px;
+  margin-left: 0;
+}
+
 .button {
   width: 200px;
   font-size: 15px;
@@ -76,5 +87,36 @@ color: rgb(47, 204, 57);
 
   .titles-studentchart h3{
     color: rgb(56, 126, 101);
+  }
+
+  @media screen and (max-width: 700px) {
+    body {
+      margin-top: 5px;
+      margin-left: 5px;
+    }
+
+    .button {
+      width: 100px;
+      font-size: 10px;
+      margin-right: 5px;
+    }
+
+    .li-students {
+      font-size: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-right: 5px;
+      padding-left: 5px;
+    }
+
+    .barChart1{
+      font-size: 10px;
+      margin-left: 10px;
+    }
+
+    .barChart2{
+      font-size: 8px;
+      margin-left:0;
+    }
   }
 
